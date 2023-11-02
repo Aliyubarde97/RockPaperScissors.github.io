@@ -1,82 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <title>Function library example</title>
-    <link rel="stylesheet" href="index.css">
-    
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
-          <div class="button">
-            <button>b</button>
-            <button>c</button>
-
+    <header class="header">
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+    <main class="main">
+      <div class="scoreboard">
+        <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+        <h3 class="score-message" id="scoreMessage">
+          First to score 5 points wins the game
+        </h3>
+        <div class="scores-container">
+          <div class="score-box">
+            <div class="sign" id="playerSign">❔</div>
+            <p class="score" id="playerScore">Player: 0</p>
           </div>
-    <div class="container">
-      <div class="text">
-        <p>Amazing Article</p>
-        <h6>my house</h6>
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ipsa dolorum maiores officiis minus a, nemo error ipsum dolores, debitis vitae totam fuga enim corrupti labore facilis assumenda mollitia unde!
-        Voluptatem, tempora autem quasi est doloribus voluptatibus unde praesentium ipsum rem reprehenderit iure accusamus, enim sit doloremque cupiditate nostrum? Praesentium asperiores quisquam dicta sapiente ex laudantium, aliquam perferendis quas nam.
-       explicabo rerum dolor sapiente aliquid laboriosam molestias possimus eius dolorem ullam. Nulla ullam velit, porro maiores laudantium officiis rerum neque.
-        Assumenda numquam odit, quas labore inventore dignissimos itaque, similique nemo fugiat, voluptate molestias. Quaerat aliquid, laboriosam facilis, numquam accusantium velit dignissimos possimus omnis porro aliquam impedit tenetur! Nihil, laborum itaque.</h3>
+          <div class="score-box">
+            <div class="sign" id="computerSign">❔</div>
+            <p class="score" id="computerScore">Computer: 0</p>
+          </div>
+        </div>
       </div>
-      <div class="imgs">
-          <h4>my Dog</h4>
-          <img src="esate5.jpg" alt="">
+      <div class="buttons">
+        <button class="btn btn-square" id="rockBtn">
+          <div class="sign">✊</div>
+        </button>
+        <button class="btn btn-square" id="paperBtn">
+          <div class="sign">✋</div>
+        </button>
+        <button class="btn btn-square" id="scissorsBtn">
+          <div class="sign">✌</div>
+        </button>
       </div>
-
-      <div class="lastp">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio explicabo alias nam qui ut veniam. Veritatis repudiandae eveniet neque expedita rerum soluta explicabo tempora voluptatum? Eligendi dolorem quae eius odit?</p>
-      </div>
-        <ul>
-          <li>home</li>
-          <li>About</li>
-          <li>contant</li>
-        </ul>
+    </main>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        
+        ISMAIL ALIYU BARDE
+      </p>
+      <a href="https://github.com/Aliyubarde97" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
     </div>
-    
-</body>
-<script src="index.js"></script>
+    <div class="overlay" id="overlay"></div>
+    <script src="index.js"></script>
+  </body>
 </html>
-  
-    <!-- <script>
-      const input = document.querySelector('.numberInput');
-      const para = document.querySelector('p');
-
-      function squared(num){
-        return num * num;
-      }
-
-      function cubed(num){
-        return num * num * num;
-      }
-
-      function factorial(num){
-        if(num < 0) return underfined;
-        if (num == 0) return 1;
-        let x = num - 1;
-        while (x > 1){
-            num *= x;
-            x--;
-        }
-        return num;
-      }
-
-      input.addEventListener("change", () =>{
-        const num = parseFloat(input.value);
-        if (isNaN(num)){
-            para.textContent = "you need to enter a number";
-        }  else {
-            para.textContent = `${num} squared is ${squared(num)}.`;
-            para.textContent += `${num} cubed is ${squared(num)}.`;
-            para.textContent += `${num} factorial is ${squared(num)}.`;
-        }
-      });
-  
-    </script>
-             -->
